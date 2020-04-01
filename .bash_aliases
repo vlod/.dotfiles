@@ -1,3 +1,10 @@
+# add to top of ~/.bash_aliases
+#
+# if we have one in dotfiles exec it
+# if [ -f "$HOME/dev/Machine-setup/dotfiles/.bash_aliases" ] ; then
+#  . $HOME/dev/Machine-setup/dotfiles/.bash_aliases
+# fi
+
 alias h=history
 alias c=clear
 alias opencwd='nautilus .'
