@@ -20,3 +20,4 @@ alias dkrmall='docker rm `docker ps -aq --no-trunc`'
 alias dki="docker images"
 alias dcu="docker-compose up"
 alias dcud="docker-compose up -d"
+alias dkrun="docker run -it --rm" # dkrun alpine
