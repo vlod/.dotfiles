@@ -1,0 +1,26 @@
+{
+    "telemetry.enableTelemetry": false,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "window.zoomLevel": 2,
+    "editor.tabSize": 2,
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.activityBar.visible": true,
+    "editor.dragAndDrop": false,
+    "window.menuBarVisibility": "default",
+    "breadcrumbs.enabled": true,
+    "[xml]": {
+        "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.startupEditor": "none",
+    "git.suggestSmartCommit": false,
+    "git.untrackedChanges": "separate",
+    "editor.renderLineHighlight": "all",
+}
