@@ -13,5 +13,10 @@
   {
     "key": "alt+j",
     "command": "editor.action.joinLines"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
   }
 ]
