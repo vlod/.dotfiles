@@ -23,4 +23,8 @@
     "git.suggestSmartCommit": false,
     "git.untrackedChanges": "separate",
     "editor.renderLineHighlight": "all",
+    "editor.fontSize": 11,
+    "debug.console.fontSize": 11,
+    "markdown.preview.fontSize": 11,
+    "terminal.integrated.fontSize": 11,
 }

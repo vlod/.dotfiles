@@ -28,3 +28,6 @@ alias dki="docker images"
 alias dcu="docker-compose up"
 alias dcud="docker-compose up -d"
 alias dkrun="docker run -it --rm" # dkrun alpine
+
+# whats listening on a particular port
+alias port-listen="ss -tulpn | grep LISTEN"
