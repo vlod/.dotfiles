@@ -5,6 +5,12 @@
 #  . $HOME/.dotfiles/.bash_aliases
 # fi
 
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
 alias h=history
 alias c=clear
 alias opencwd='nautilus .'
