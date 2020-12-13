@@ -34,7 +34,12 @@ alias dki="docker images"
 alias dcu="docker-compose up"
 alias dcud="docker-compose up -d"
 alias dkrun="docker run -it --rm" # dkrun alpine
-alias bat="batcat"
+alias bat="batcat" # https://github.com/sharkdp/bat
 
 # whats listening on a particular port
 alias port-listen="ss -tulpn | grep LISTEN"
+
+# https://is.gd/c17Q3D
+function port-kill() {
+  kill -9 $(lsof -ti tcp:$1)
+}

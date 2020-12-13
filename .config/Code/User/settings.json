@@ -31,4 +31,5 @@
     "mochaExplorer.env": {
         "NODE_ENV": "test"
     },
+    "jestrunner.jestPath": "./node_modules/.bin/jest",
 }
