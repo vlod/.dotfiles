@@ -43,3 +43,9 @@ alias port-listen="ss -tulpn | grep LISTEN"
 function port-kill() {
   kill -9 $(lsof -ti tcp:$1)
 }
+
+# https://techwiser.com/fix-bluetooth-device-doesnt-auto-connect-in-linux/
+function mouse-connect() {
+ echo "Reconnecting MX Ergo mouse"
+ bluetoothctl connect C6:97:89:8B:63:0E
+}
