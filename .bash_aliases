@@ -38,10 +38,14 @@ alias bat="batcat" # https://github.com/sharkdp/bat
 
 # whats listening on a particular port
 alias port-listen="ss -tulpn | grep LISTEN"
+alias kill-node='ss -tulpn | grep LISTEN |grep 3001| grep -Po "(?<=pid=).*(?=,)" |xargs kill'
 
 # https://is.gd/c17Q3D
-function port-kill() {
-  kill -9 $(lsof -ti tcp:$1)
+#function port-kill() {
+#  kill -9 $(lsof -ti tcp:$1)
+#}
+port-kill () {
+  ss -tulpn | grep LISTEN |grep "$1" | grep -Po "(?<=pid=).*(?=,)" |xargs kill
 }
 
 # https://techwiser.com/fix-bluetooth-device-doesnt-auto-connect-in-linux/

@@ -8,7 +8,6 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "workbench.activityBar.visible": true,
     "editor.dragAndDrop": false,
     "window.menuBarVisibility": "default",
     "breadcrumbs.enabled": true,
@@ -32,4 +31,29 @@
         "NODE_ENV": "test"
     },
     "jestrunner.jestPath": "./node_modules/.bin/jest",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "mdb.confirmRunAll": false,
+    "explorer.confirmDelete": false,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "signatry_dev",
+            "database": "signatry_dev",
+            "username": "user",
+            "password": "pass"
+        }
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "json.schemas": [
+        {
+            "fileMatch": ["cypress.json"],
+            "url": "https://on.cypress.io/cypress.schema.json"
+        }
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
 }
