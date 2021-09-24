@@ -8,6 +8,7 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "workbench.activityBar.visible": true,
     "editor.dragAndDrop": false,
     "window.menuBarVisibility": "default",
     "breadcrumbs.enabled": true,
@@ -48,7 +49,6 @@
             "password": "pass"
         }
     ],
-    "diffEditor.ignoreTrimWhitespace": false,
     "json.schemas": [
         {
             "fileMatch": ["cypress.json"],
@@ -56,4 +56,11 @@
         }
     ],
     "security.workspace.trust.untrustedFiles": "open",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "debug.onTaskErrors": "abort",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.suggest.preview": true,
 }

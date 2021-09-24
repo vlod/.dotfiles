@@ -49,7 +49,7 @@ port-kill () {
 }
 
 # https://techwiser.com/fix-bluetooth-device-doesnt-auto-connect-in-linux/
-function mouse-connect() {
- echo "Reconnecting MX Ergo mouse"
- bluetoothctl connect C6:97:89:8B:63:0E
-}
+#function mouse-connect() {
+# echo "Reconnecting MX Ergo mouse"
+# bluetoothctl connect C6:97:89:8B:63:0E
+#}
