@@ -1,6 +1,5 @@
 {
     "telemetry.enableTelemetry": false,
-    "editor.minimap.enabled": false,
     "terminal.integrated.rendererType": "dom",
     "editor.tabSize": 2,
     "git.autofetch": true,
@@ -62,7 +61,6 @@
     "debug.onTaskErrors": "abort",
     "editor.bracketPairColorization.enabled": true,
     "editor.suggest.preview": true,
-    "window.zoomLevel": 1,
     "yaml.schemas": {
         "file:///home/vlod/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
@@ -80,4 +78,8 @@
     "atlascode.bitbucket.enabled": false,
     "git.confirmSync": false,
     "editor.hover.delay": 1000,
+    "gitlens.views.stashes.files.layout": "list",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1,
+    "githubPullRequests.fileListLayout": "tree",
 }
