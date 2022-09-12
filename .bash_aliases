@@ -37,6 +37,8 @@ alias dkrun="docker run -it --rm" # dkrun alpine
 alias bat="batcat" # https://github.com/sharkdp/bat
 alias weather="curl wttr.in"
 
+alias fd="fdfind"
+
 # whats listening on a particular port
 alias port-listen="ss -tulpn | grep LISTEN"
 alias kill-node='ss -tulpn | grep LISTEN |grep 3001| grep -Po "(?<=pid=).*(?=,)" |xargs kill'
