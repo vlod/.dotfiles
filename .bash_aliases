@@ -36,8 +36,12 @@ alias dcud="docker-compose up -d"
 alias dkrun="docker run -it --rm" # dkrun alpine
 alias bat="batcat" # https://github.com/sharkdp/bat
 alias weather="curl wttr.in"
+alias enpass="/opt/enpass/Enpass showassistant"
+alias cls="clear"
 
 alias fd="fdfind"
+
+alias youtube_dl="yt-dlp"
 
 # whats listening on a particular port
 alias port-listen="ss -tulpn | grep LISTEN"

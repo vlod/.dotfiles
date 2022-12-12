@@ -1,85 +1,94 @@
 {
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.rendererType": "dom",
-    "editor.tabSize": 2,
-    "git.autofetch": true,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "workbench.activityBar.visible": true,
-    "editor.dragAndDrop": false,
-    "window.menuBarVisibility": "default",
-    "breadcrumbs.enabled": true,
-    "[xml]": {
-        "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
-    },
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "workbench.startupEditor": "none",
-    "git.suggestSmartCommit": false,
-    "git.untrackedChanges": "separate",
-    "editor.renderLineHighlight": "all",
-    "editor.fontSize": 12,
-    "debug.console.fontSize": 11,
-    "markdown.preview.fontSize": 11,
-    "terminal.integrated.fontSize": 11,
-    "mochaExplorer.debuggerConfig": "",
-    "mochaExplorer.env": {
-        "NODE_ENV": "test"
-    },
-    "jestrunner.jestPath": "./node_modules/.bin/jest",
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/usr/bin/python3",
-    "mdb.confirmRunAll": false,
-    "explorer.confirmDelete": false,
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "signatry_dev",
-            "database": "signatry_dev",
-            "username": "user",
-            "password": "pass"
-        }
-    ],
-    "json.schemas": [
-        {
-            "fileMatch": ["cypress.json"],
-            "url": "https://on.cypress.io/cypress.schema.json"
-        }
-    ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "debug.onTaskErrors": "abort",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.suggest.preview": true,
-    "yaml.schemas": {
-        "file:///home/vlod/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "redhat.telemetry.enabled": false,
-    "atlascode.jira.jqlList": [
-        {
-            "id": "8f687920-0d45-4c11-9b77-1c7f000d8299",
-            "enabled": true,
-            "name": "My rmarkbio Issues",
-            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-            "siteId": "52851140-d35d-4ea0-a2a4-cafb6cc9b464",
-            "monitor": true
-        }
-    ],
-    "atlascode.bitbucket.enabled": false,
-    "git.confirmSync": false,
-    "editor.hover.delay": 1000,
-    "gitlens.views.stashes.files.layout": "list",
-    "editor.minimap.enabled": false,
-    "window.zoomLevel": 1,
-    "githubPullRequests.fileListLayout": "tree",
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.rendererType": "dom",
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.activityBar.visible": true,
+  "editor.dragAndDrop": false,
+  "window.menuBarVisibility": "default",
+  "breadcrumbs.enabled": true,
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.startupEditor": "none",
+  "git.suggestSmartCommit": false,
+  "git.untrackedChanges": "separate",
+  "editor.renderLineHighlight": "all",
+  "editor.fontSize": 12,
+  "debug.console.fontSize": 11,
+  "markdown.preview.fontSize": 11,
+  "terminal.integrated.fontSize": 11,
+  "mochaExplorer.debuggerConfig": "",
+  "mochaExplorer.env": {
+    "NODE_ENV": "test"
+  },
+  "jestrunner.jestPath": "./node_modules/.bin/jest",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "/usr/bin/python3",
+  "mdb.confirmRunAll": false,
+  "explorer.confirmDelete": false,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "signatry_dev",
+      "database": "signatry_dev",
+      "username": "user",
+      "password": "pass"
+    }
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["cypress.json"],
+      "url": "https://on.cypress.io/cypress.schema.json"
+    }
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.onTaskErrors": "abort",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.suggest.preview": true,
+  "yaml.schemas": {
+    "file:///home/vlod/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "redhat.telemetry.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "id": "8f687920-0d45-4c11-9b77-1c7f000d8299",
+      "enabled": true,
+      "name": "My rmarkbio Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "52851140-d35d-4ea0-a2a4-cafb6cc9b464",
+      "monitor": true
+    }
+  ],
+  "atlascode.bitbucket.enabled": false,
+  "git.confirmSync": false,
+  "editor.hover.delay": 1000,
+  "gitlens.views.stashes.files.layout": "list",
+  "editor.minimap.enabled": false,
+  "githubPullRequests.fileListLayout": "tree",
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "window.zoomLevel": 1
 }
