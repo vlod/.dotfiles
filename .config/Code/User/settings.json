@@ -90,5 +90,8 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "editor.foldingImportsByDefault": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.preferredDarkColorTheme": "Default Dark+"
 }

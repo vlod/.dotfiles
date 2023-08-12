@@ -19,7 +19,8 @@ alias opencwd='nautilus .'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-alias http-serve='python3 -m http.server'
+#alias http-serve='python3 -m http.server'
+alias www='caddy file-server --browse --listen :8080'
 
 #alias audio-list='pactl list short modules | grep alca_card.pci' # pactl unload-module module-id
 
@@ -36,6 +37,7 @@ alias dcud="docker-compose up -d"
 alias dkrun="docker run -it --rm" # dkrun alpine
 alias bat="batcat" # https://github.com/sharkdp/bat
 alias weather="curl wttr.in"
+alias sublime_merge="flatpak run com.sublimemerge.App"
 alias enpass="/opt/enpass/Enpass showassistant"
 alias cls="clear"
 
@@ -44,7 +46,7 @@ alias fd="fdfind"
 alias youtube_dl="yt-dlp"
 
 # whats listening on a particular port
-alias port-listen="ss -tulpn | grep LISTEN"
+alias ports="ss -tulpn | grep LISTEN"
 alias kill-node='ss -tulpn | grep LISTEN |grep 3001| grep -Po "(?<=pid=).*(?=,)" |xargs kill'
 
 # https://is.gd/c17Q3D
