@@ -90,8 +90,14 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "editor.foldingImportsByDefault": true,
   "workbench.colorTheme": "Default Dark+",
-  "workbench.preferredDarkColorTheme": "Default Dark+"
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "telemetry.telemetryLevel": "error",
+  "gitlens.telemetry.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "totalTypeScript.hiddenTips": [
+    "interface-declaration"
+  ]
 }

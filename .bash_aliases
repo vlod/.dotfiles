@@ -38,6 +38,7 @@ alias dkrun="docker run -it --rm" # dkrun alpine
 alias bat="batcat" # https://github.com/sharkdp/bat
 alias weather="curl wttr.in"
 alias sublime_merge="flatpak run com.sublimemerge.App"
+alias sublime_text="/opt/sublime_text/sublime_text"
 alias enpass="/opt/enpass/Enpass showassistant"
 alias cls="clear"
 
