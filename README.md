@@ -1,7 +1,7 @@
 # dotfiles
 My dotfiles
  
-## vscodee
+## vscode
 ```
 cd ~/.config/Code/User
 ln -s ~/.dotfiles/.config/Code/User/keybindings.json .
