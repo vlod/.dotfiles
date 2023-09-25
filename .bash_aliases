@@ -20,7 +20,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 #alias http-serve='python3 -m http.server'
-alias www='caddy file-server --browse --listen :8080'
+alias www='caddy file-server --browse --listen :3000'
 
 #alias audio-list='pactl list short modules | grep alca_card.pci' # pactl unload-module module-id
 
