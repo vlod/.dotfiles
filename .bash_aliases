@@ -22,6 +22,8 @@ alias pbpaste='xclip -selection clipboard -o'
 #alias http-serve='python3 -m http.server'
 alias www='caddy file-server --browse --listen :3000'
 
+alias uuid='uuidgen'
+
 #alias audio-list='pactl list short modules | grep alca_card.pci' # pactl unload-module module-id
 
 alias lgrep='ls -al| grep -i $*'
