@@ -1,67 +1,73 @@
-# add to top of ~/.bash_aliases
-#
-# if we have one in dotfiles exec it
-# if [ -f "$HOME/.dotfiles/.bash_aliases" ] ; then
-#  . $HOME/.dotfiles/.bash_aliases
-# fi
-
-mkcd ()
-{
-    mkdir -p -- "$1" &&
-      cd -P -- "$1"
-}
-
+alias neofetch=fastfetch
+alias fd=fdfind
+alias bat=batcat
 alias h=history
-alias c=clear
-alias opencwd='nautilus .'
+alias cls=clear
+alias uuid='uuidgen'
+alias lgrep='ls -al| grep -i '
 
 # https://garywoodfine.com/use-pbcopy-on-ubuntu/
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
-#alias http-serve='python3 -m http.server'
-alias www='caddy file-server --browse --listen :3000'
-
-alias uuid='uuidgen'
-
-#alias audio-list='pactl list short modules | grep alca_card.pci' # pactl unload-module module-id
-
-alias lgrep='ls -al| grep -i $*'
+#alias pbcopy='xclip -selection clipboard'
+#alias pbpaste='xclip -selection clipboard -o'
+# use wl-copy and wl-paste
 
 # docker stuff
 alias dk="docker"
 alias dkps="docker ps"
 alias dkrm="docker rm"
-alias dkrmall='docker rm `docker ps -aq --no-trunc`'
+alias dkrmall='docker rm '
+alias dkrmid='docker rmi '
 alias dki="docker images"
-alias dcu="docker-compose up"
-alias dcud="docker-compose up -d"
+alias dcu="docker compose up"
+alias dcud="docker compose up -d"
 alias dkrun="docker run -it --rm" # dkrun alpine
-alias bat="batcat" # https://github.com/sharkdp/bat
-alias weather="curl wttr.in"
-alias sublime_merge="flatpak run com.sublimemerge.App"
-alias sublime_text="/opt/sublime_text/sublime_text"
-alias enpass="/opt/enpass/Enpass showassistant"
-alias cls="clear"
-
-alias fd="fdfind"
-
-alias youtube_dl="yt-dlp"
 
 # whats listening on a particular port
-alias ports="ss -tulpn | grep LISTEN"
-alias kill-node='ss -tulpn | grep LISTEN |grep 3001| grep -Po "(?<=pid=).*(?=,)" |xargs kill'
+#alias ports="ss -tulpn | grep LISTEN"
+alias ports="lsof -i :3001"
+#alias kill-node='ss -tulpn | grep LISTEN |grep 3001| grep -Po "(?<=pid=).*(?=,)" |xargs kill'
 
-# https://is.gd/c17Q3D
-#function port-kill() {
-#  kill -9 $(lsof -ti tcp:$1)
-#}
-port-kill () {
-  ss -tulpn | grep LISTEN |grep "$1" | grep -Po "(?<=pid=).*(?=,)" |xargs kill
+# https://gist.github.com/mkczyk/646b69f85f0214f813d3a3da951d7df2
+alias g='git'
+alias ga='git add'
+
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+
+alias gcmsg='git commit -m'
+alias gco='git checkout'
+alias gcm='git checkout main'
+
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git pull'
+
+alias gp='git push'
+alias gpd='git push --dry-run'
+
+alias grb='git rebase'
+alias grbi='git rebase -i'
+
+alias gst='git status'
+
+mkcd ()
+{
+    mkdir -p -- "" &&
+      cd -P -- ""
 }
 
-# https://techwiser.com/fix-bluetooth-device-doesnt-auto-connect-in-linux/
-#function mouse-connect() {
-# echo "Reconnecting MX Ergo mouse"
-# bluetoothctl connect C6:97:89:8B:63:0E
-#}
+# Navigate back from the working directory, one directory at a time, for the number of times given in the first argument
+function cdb() {
+    if [[ -z "" ]]; then
+        cd ..
+        return
+    fi
+    pwd
+    for i in 1; do
+        cd ..
+    done
+    pwd
+}
+
