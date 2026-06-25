@@ -54,18 +54,18 @@ alias gst='git status'
 
 mkcd ()
 {
-    mkdir -p -- "" &&
-      cd -P -- ""
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
 }
 
 # Navigate back from the working directory, one directory at a time, for the number of times given in the first argument
 function cdb() {
-    if [[ -z "" ]]; then
+    if [[ -z "$1" ]]; then
         cd ..
         return
     fi
     pwd
-    for i in 1; do
+    for i in `seq 1 $1`; do
         cd ..
     done
     pwd
