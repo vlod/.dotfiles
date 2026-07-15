@@ -52,6 +52,8 @@ alias grbi='git rebase -i'
 
 alias gst='git status'
 
+alias pn='pnpm'
+
 mkcd ()
 {
     mkdir -p -- "$1" &&

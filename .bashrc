@@ -134,3 +134,15 @@ export PATH=$HOME/.local/bin:$PATH
 
 # add golang
 export PATH=$PATH:/usr/local/go/bin
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/vlod/.local/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/vlod/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
